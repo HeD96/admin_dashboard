@@ -58,17 +58,34 @@ body {
     font-size: 1.4rem;
     font-weight: bold;
     margin-bottom: 1rem;
+    margin-left: 3rem;
+    position: relative;
+}
+
+.sidebar p:hover {
+    cursor: pointer;
+    color: rgb(176, 202, 253);
 }
 
 p i {
     font-size: 1.2rem;
-    margin-right: 1.4rem;
-    margin-left: 0.3rem;
+
+    display: inline-block;
+    position: absolute;
+    left: -20%;
+    top: 14%;
+}
+
+h1 {
+    margin-left: 2.9rem;
 }
 
 h1 i {
     font-size: 2rem;
-    margin-right: 1rem;
+    display: inline-block;
+    position: absolute;
+    left: 1.4%;
+    top: 1.9%;
 }
 
 /* main content */
@@ -133,4 +150,24 @@ h1 i {
     font-size: 1rem;
     font-weight: bold;
     color: white;
+}
+
+.user_area {
+    position: relative;
+    /* padding-right: 4rem; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user_area p {
+    float: right;
+    display: block;
+    font-size: 1.2rem;
+}
+
+.user_area i {
+    position: absolute;
+    left: 15%;
+    top: 40%;
 }
