@@ -63,7 +63,7 @@ body {
 /* main content */
 
 .main_content {
-    background-color: #dce5f5;
+    background-color: #e2ebfc;
 }
 
 /* header */
@@ -85,6 +85,17 @@ body {
     border: none;
     border-radius: 1rem;
     width: 80%;
-    background-color: #dce5f5;
+    background-color: #e2ebfc;
     height: 2rem;
+}
+
+p i {
+    font-size: 1.2rem;
+    margin-right: 1.4rem;
+    margin-left: 0.3rem;
+}
+
+h1 i {
+    font-size: 2rem;
+    margin-right: 1rem;
 }
