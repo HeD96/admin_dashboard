@@ -26,7 +26,7 @@ body {
 
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: 1fr 5fr;
 }
 
 .wrapper div {
@@ -88,12 +88,6 @@ h1 i {
     top: 1.9%;
 }
 
-/* main content */
-
-.main_content {
-    background-color: #e2ebfc;
-}
-
 /* header */
 
 .header {
@@ -143,7 +137,7 @@ h1 i {
 
 .button_area button {
     flex: 1;
-    height: 40%;
+    height: 50%;
     background-color: #0098eb;
     border-style: none;
     border-radius: 1.2rem;
@@ -170,4 +164,84 @@ h1 i {
     position: absolute;
     left: 15%;
     top: 40%;
+}
+
+/* main content */
+
+.main_content {
+    background-color: #e2ebfc;
+
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+}
+
+.projects {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1rem;
+
+    padding: 4rem 1rem;
+}
+
+.card {
+    border: 1px dotted blue;
+    border-left: 8px solid orange;
+}
+
+.projects::before {
+    position: absolute;
+    content: "Projects";
+    left: 1rem;
+    top: 2rem;
+
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.announcements {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 4rem;
+
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    padding-right: 2rem;
+}
+
+.announcements div {
+    border: 1px dotted pink;
+}
+
+.card, .announcements div {
+    border-radius: 0.5rem;
+}
+
+.announcement_card {
+    position: relative;
+}
+
+.announcement_card::before {
+    position: absolute;
+    content: "Announcements";
+
+    font-size: 1.2rem;
+    font-weight: bold;
+
+    top: -2rem;
+}
+
+.trending_card {
+    position: relative;
+}
+
+.trending_card::before {
+    position: absolute;
+    content: "Trending";
+
+    font-size: 1.2rem;
+    font-weight: bold;
+
+    top: -2rem;
 }
