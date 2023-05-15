@@ -14,15 +14,14 @@ html {
 
 body {
     box-sizing: inherit;
-    height: 100%;
-
+    min-height: 100%;
 }
 
 .wrapper {
     position: relative;
-    left: 14.5%;
+    left: 9.7%;
     height: 100%;
-    width: 70%;
+    width: 80%;
 
     display: grid;
     grid-template-columns: 1fr 4fr;
@@ -40,6 +39,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    padding-top: 2rem;
 }
 
 .sidebar div {
@@ -54,7 +54,7 @@ body {
     font-size: 1.4rem;
     font-weight: bold;
     margin-bottom: 1rem;
-    margin-left: 3rem;
+    margin-left: 3.5rem;
     position: relative;
 }
 
@@ -73,7 +73,7 @@ p i {
 }
 
 .sidebar_header h1 {
-    margin-left: 2.9rem;
+    margin-left: 3.5rem;
 }
 
 h1 i {
@@ -81,7 +81,7 @@ h1 i {
     display: inline-block;
     position: absolute;
     left: 1.4%;
-    top: 1.9%;
+    top: 4.8%;
 }
 
 /* header */
@@ -93,6 +93,8 @@ h1 i {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
 }
 
 .header div:nth-child(1) {
@@ -140,7 +142,6 @@ h1 i {
 
 .user_area {
     position: relative;
-    /* padding-right: 4rem; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -149,13 +150,13 @@ h1 i {
 .user_area p {
     float: right;
     display: block;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    font-weight: bold;
 }
 
 .user_area i {
-    position: absolute;
-    left: 15%;
-    top: 40%;
+    margin-right: 3rem;
+    cursor: pointer;
 }
 
 /* main content */
@@ -172,7 +173,7 @@ h1 i {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    gap: 1rem;
+    gap: 2rem;
 
     padding: 3.8rem 1rem;
 }
@@ -251,18 +252,43 @@ h1 i {
     font-weight: bold;
 
     top: -2rem;
+    left: 0;
 }
 
 .trending_card {
     position: relative;
+    padding: 2rem;
 }
+
+.trending_card > div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    margin-bottom: 1rem;
+} 
 
 .trending_card::before {
     position: absolute;
     content: "Trending";
 
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: bold;
 
     top: -2rem;
+    left: 0;
+}
+
+.user_name {
+    display: inline-block;
+}
+
+.user_name p:last-child {
+    color:rgb(78, 78, 78);
+}
+
+img {
+    width: 25%;
+    height: 25%;
+    border-radius: 50%;
 }
