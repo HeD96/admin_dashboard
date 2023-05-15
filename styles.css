@@ -29,10 +29,6 @@ body {
     grid-template-rows: 1fr 5fr;
 }
 
-.wrapper div {
-    
-}
-
 /* sidebar */
 
 .sidebar {
@@ -76,7 +72,7 @@ p i {
     top: 14%;
 }
 
-h1 {
+.sidebar_header h1 {
     margin-left: 2.9rem;
 }
 
@@ -97,10 +93,6 @@ h1 i {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
-}
-
-.header div {
-    
 }
 
 .header div:nth-child(1) {
@@ -182,12 +174,23 @@ h1 i {
     grid-template-rows: 1fr 1fr 1fr;
     gap: 1rem;
 
-    padding: 4rem 1rem;
+    padding: 3.8rem 1rem;
 }
 
 .card {
-    border: 1px dotted blue;
     border-left: 8px solid orange;
+
+    padding: 1.5rem 1rem;
+}
+
+.card h1 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.card p {
+    color: rgb(78, 78, 78);
+    line-height: 1.2;
 }
 
 .projects::before {
@@ -196,7 +199,7 @@ h1 i {
     left: 1rem;
     top: 2rem;
 
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: bold;
 }
 
@@ -205,28 +208,46 @@ h1 i {
     grid-template-rows: 1fr 1fr;
     gap: 4rem;
 
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding-top: 3.8rem;
+    padding-bottom: 3.8rem;
     padding-right: 2rem;
 }
 
-.announcements div {
-    border: 1px dotted pink;
-}
-
-.card, .announcements div {
+.card, .announcement_card, .trending_card {
     border-radius: 0.5rem;
+    background-color: white;
 }
 
 .announcement_card {
     position: relative;
+    padding: 1.5rem 1rem; 
+}
+
+.announcement_card div {
+    padding-bottom: 1rem;
+    margin-bottom: 0.5rem;
+    border-bottom: 1.5px solid rgba(78, 78, 78, 0.164);
+}
+
+.announcement_card div:last-child {
+    border-bottom: none;
+}
+
+.announcement_card h1 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.announcement_card p {
+    font-size: 0.8rem;
+    color: rgb(78, 78, 78);
 }
 
 .announcement_card::before {
     position: absolute;
     content: "Announcements";
 
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: bold;
 
     top: -2rem;
