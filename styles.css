@@ -7,21 +7,21 @@
 
 html {
     height: 100%;
-    font-size: 100%;
+    font-size: 14px;
     font-family: "Roboto Condensed", sans-serif;
     box-sizing: border-box;
 }
 
 body {
     box-sizing: inherit;
-    min-height: 100%;
+    height: 100%;
 }
 
 .wrapper {
     position: relative;
-    left: 9.7%;
+    left: 14.5%;
     height: 100%;
-    width: 80%;
+    width: 75%;
 
     display: grid;
     grid-template-columns: 1fr 4fr;
@@ -44,10 +44,6 @@ body {
 
 .sidebar div {
     margin-left: 1rem;
-}
-
-.sidebar_header {
-    margin-top: 1rem;
 }
 
 .sidebar p {
@@ -81,7 +77,7 @@ h1 i {
     display: inline-block;
     position: absolute;
     left: 1.4%;
-    top: 4.8%;
+    top: 3.3%;
 }
 
 /* header */
@@ -93,7 +89,7 @@ h1 i {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
-    padding-top: 2rem;
+    padding-top: 1rem;
     padding-bottom: 1rem;
 }
 
@@ -101,10 +97,6 @@ h1 i {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.fa-solid {
-    margin-right: 1.2rem;
 }
 
 .header input {
@@ -115,6 +107,7 @@ h1 i {
     height: 2rem;
     padding-left: 1rem;
     padding-right: 1rem;
+    margin-left: 1.2rem;
     font-size: 1rem;
 }
 
@@ -122,22 +115,30 @@ h1 i {
     outline: 2px solid #0098eb;
 }
 
+.search_area i {
+    font-size: 1.4rem;
+}
+
 .button_area {
     display: flex;
     gap: 1.5rem;
     align-items: center;
-    margin-right: 3rem;
+    padding-right: 3rem;
 }
 
 .button_area button {
     flex: 1;
-    height: 50%;
+    height: 60%;
     background-color: #0098eb;
     border-style: none;
     border-radius: 1.2rem;
     font-size: 1rem;
     font-weight: bold;
     color: white;
+}
+
+.button_area button:hover {
+    cursor: pointer;
 }
 
 .user_area {
@@ -148,15 +149,37 @@ h1 i {
 }
 
 .user_area p {
-    float: right;
-    display: block;
     font-size: 1.3rem;
     font-weight: bold;
+    margin-left: 2rem;
 }
 
 .user_area i {
-    margin-right: 3rem;
+    margin-right: 2rem;
+    font-size: 1.4rem;
     cursor: pointer;
+}
+
+.current_profile {
+    display: flex;
+    align-items: center;
+    line-height: 1.4;
+}
+
+.current_profile img {
+    height: 4rem;
+    width: 4rem;
+    margin-right: 1.2rem;
+    margin-left: 2.5rem;
+}
+
+.current_profile p:first-child {
+    font-weight: bold;
+}
+
+.current_profile p:last-child {
+    font-weight: bold;
+    font-size: 1.6rem;
 }
 
 /* main content */
@@ -169,19 +192,21 @@ h1 i {
 }
 
 .projects {
+
     position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    gap: 2rem;
+    gap: 1.5rem;
 
     padding: 3.8rem 1rem;
 }
 
 .card {
     border-left: 8px solid orange;
-
     padding: 1.5rem 1rem;
+
+    position: relative;
 }
 
 .card h1 {
@@ -221,7 +246,7 @@ h1 i {
 
 .announcement_card {
     position: relative;
-    padding: 1.5rem 1rem; 
+    padding: 2rem; 
 }
 
 .announcement_card div {
@@ -281,6 +306,7 @@ h1 i {
 
 .user_name {
     display: inline-block;
+    line-height: 1.4;
 }
 
 .user_name p:last-child {
@@ -288,7 +314,23 @@ h1 i {
 }
 
 img {
-    width: 25%;
-    height: 25%;
+    width: 3.5rem;
+    height: 3.5rem;
     border-radius: 50%;
+}
+
+.actions {
+    position: absolute;
+    content: "";
+    bottom: 1.5rem;
+    right: 1rem;
+}
+
+.actions i {
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.actions i:not(:last-child) {
+    margin-right: 1.5rem;
 }
