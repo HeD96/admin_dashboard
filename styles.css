@@ -14,12 +14,13 @@ html {
 
 body {
     box-sizing: inherit;
-    height: 100%;
+    height: 100vh;
+    overflow: hidden;
 }
 
 .wrapper {
     position: relative;
-    left: 14.5%;
+    left: 12.5%;
     height: 100%;
     width: 75%;
 
@@ -40,16 +41,17 @@ body {
     flex-direction: column;
     gap: 2rem;
     padding-top: 2rem;
+    z-index: 3;
 }
 
 .sidebar div {
-    margin-left: 1rem;
+    margin-left: 2rem;
 }
 
 .sidebar p {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: bold;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     margin-left: 3.5rem;
     position: relative;
 }
@@ -65,10 +67,11 @@ p i {
     display: inline-block;
     position: absolute;
     left: -20%;
-    top: 14%;
+    top: 22%;
 }
 
 .sidebar_header h1 {
+    font-size: 2.4rem;
     margin-left: 3.5rem;
 }
 
@@ -76,8 +79,8 @@ h1 i {
     font-size: 2rem;
     display: inline-block;
     position: absolute;
-    left: 1.4%;
-    top: 3.3%;
+    left: 2.1%;
+    top: 3.5%;
 }
 
 /* header */
@@ -196,7 +199,8 @@ h1 i {
     position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    /* grid-template-rows: 1fr 1fr 1fr; */
+    grid-template-rows: repeat(3, minmax(200px, 1fr));
     gap: 1.5rem;
 
     padding: 3.8rem 1rem;
@@ -231,7 +235,8 @@ h1 i {
 
 .announcements {
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    /* grid-template-rows: 1fr 1fr; */
+    grid-template-rows: repeat(2, minmax(292px, 1fr));
     gap: 4rem;
 
     padding-top: 3.8rem;
@@ -242,6 +247,7 @@ h1 i {
 .card, .announcement_card, .trending_card {
     border-radius: 0.5rem;
     background-color: white;
+    box-shadow: 3px 3px 8px -2px rgba(128, 128, 128, 0.411);
 }
 
 .announcement_card {
